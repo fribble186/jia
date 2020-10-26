@@ -1,0 +1,88 @@
+/* pages/dishes/dishes.wxss */
+.backicon{
+  margin:20rpx;
+  width:90rpx;
+  height:90rpx;
+}
+
+.black{
+  position: fixed;
+  background-color: black;
+  opacity: 0.7;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:3;
+}
+
+.add{
+  top:300rpx;
+  position: fixed;
+  width:100%;
+  height:700rpx;
+  background-color: #fdffe2;
+  z-index:8;
+  text-align: center;
+  padding-top:60rpx;
+}
+
+.di{
+  display: flex;
+  flex-direction: row;
+  padding-right:50rpx;
+  margin-top:150rpx;
+}
+.close{
+  width:80rpx;
+  height:80rpx;
+}
+
+.submit{
+  width:350rpx;
+  background: #d8f9cf;
+}
+
+.intro{
+  font-size: 50rpx;
+  font-weight: 900;
+  margin-bottom: 30rpx;
+  margin-top:20rpx;
+}
+
+.scroll{
+  padding-top:20rpx;
+  border:1rpx black solid;
+  height:75%;
+}
+
+.line{
+  width:90%;
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+  border:1rpx black solid;
+  margin-bottom:30rpx;
+  margin-left:20rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+  padding-top:10rpx;
+}
+.type{
+  width:260rpx;
+  font-size: 35rpx;
+  font-weight:500;
+}
+.name{
+  width:300rpx;
+  font-size: 50rpx;
+  font-weight:900;
+}
+.deleteOne{
+  width:70rpx;
+  height:70rpx;
+}
+
+.btn{
+  margin-top:20rpx;
+}

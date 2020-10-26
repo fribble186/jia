@@ -1,0 +1,44 @@
+<!--pages/homepage/homepage.wxml-->
+<!--<view wx:if='{{version}}' class='version'>success</view>-->
+<view>
+    <view class='menuName'>{{menuName}}</view>
+    <scroll-view class='dishInMenu' scroll-y='true'>
+
+            <view class='dish' wx:if='{{dish}}' wx:for="{{dishes}}">
+            <image class='deleteOne' src='../../images/deleteOne.png' data-id="{{item._id.$oid}}" bindtap='del'></image>
+                <view class='type'>{{item.category}}</view>
+                <!--<view class='time'>{{(item.time.$date)-timestamp}}天</view>-->
+                <view class='name'>{{item.name}}</view>
+            </view>
+            <view class='nodish' wx:if='{{!dish}}'> 点击右下角图表添加家中的美食吧！ </view>
+    </scroll-view>
+    <image src='../../images/dice.png' class='dice' bindtap='startRoll'/>
+    <image src='../../images/settingC.png' class='setting' bindtap='tosetting'/>
+</view>
+<view class='choices' hidden='{{choice}}' bindtap='endRoll'></view>
+<view class='rolldish' hidden='{{choice2}}' style='{{ch}}' bindtap='rollone'>随机菜</view>
+<view class='rollmenu' hidden='{{choice2}}' style='{{ch}}' bindtap='rollall'>随机菜单</view>
+
+
+<!--login遮罩层-->
+<view class='login' hidden='{{cancel}}'>
+<view class='userAvatar'><open-data type="userAvatarUrl"></open-data></view>
+<view class='userName'>欢迎你，<open-data type="userNickName"></open-data></view>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='login-btn'>授权登录</button>
+<view wx:else>请升级微信版本</view>
+</view>
+
+
+<!--roll一个菜-->
+<view hidden='{{one}}' class='one'>
+<view class='roll' style='{{ro}}'>{{roll.name}}</view>
+<image src='../../images/y.png' class='yes' bindtap='addToMenu'/>
+<image src='../../images/dice.png' class='no' bindtap='rollone'/>
+</view>
+<!--roll一桌菜-->
+<view hidden='{{all}}' class='all'>
+<view wx:for="{{rolles}}" class='rolles' style='{{ra}}'>{{item.name}}</view>
+<image src='../../images/y.png' class='yes' bindtap='addsToMenu'/>
+<image src='../../images/dice.png' class='no' bindtap='rollall'/>
+</view>

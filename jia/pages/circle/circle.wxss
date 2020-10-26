@@ -1,0 +1,89 @@
+/* pages/circle/circle.wxss */
+.backicon{
+  margin:20rpx;
+  width:90rpx;
+  height:90rpx;
+}
+
+.member{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.member image{
+  width:100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  margin-left:50rpx;
+  margin-right:150rpx;
+}
+
+.name{
+line-height:100rpx;
+font-size: 55rpx;
+font-weight: 900;
+}
+
+.invite{
+  position: fixed;
+  bottom:0rpx;
+  width:100%;
+  height:100rpx;
+  font-size:65rpx;
+  font-weight:900;
+  text-align: center;
+  background: #fdffe2;
+  line-height: 100rpx;
+}
+
+.in{
+  position: fixed;
+  bottom:0rpx;
+  width:100%;
+  height:200rpx;
+  font-size:65rpx;
+  font-weight:900;
+  text-align: center;
+  background: #d8f9cf
+}
+
+.login{
+  background-color: rgba(0, 0, 0, 0.8);
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0;
+  top:0;
+}
+
+.userAvatar{
+  overflow:hidden;
+  width:200rpx;
+  height:200rpx;
+  border-radius:300rpx;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left:280rpx;
+  top:300rpx;
+}
+
+.userName{
+  font-size:35rpx;
+  font-weight:500;
+  color: white;
+  position: absolute;
+  top:600rpx;
+  left:260rpx;
+}
+
+.login-btn{
+  font-size: 32rpx;
+  line-height: 100rpx;
+  width:300rpx;
+  height:100rpx;
+  border-radius:200rpx;
+  position: absolute;
+  top:800rpx;
+  left:230rpx;
+}

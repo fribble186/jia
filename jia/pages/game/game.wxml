@@ -1,0 +1,7 @@
+<!--pages/game/game.wxml-->
+<image src='../../images/back.png' class='backicon' bindtap='back'/>
+<view class='title'>小游戏</view>
+<view class='ins'>输入自己今天想吃的东西，用中文逗号隔开，然后靠天决定今天吃什么吧！</view>
+<view class='gameoutput'>{{out}}</view>  
+<textarea class='gameinput' placeholder='如A,B,C' bindinput='unlock'>{{lastinput}}</textarea>
+<button class='submit' bindtap='submit'>猜我想吃</button>

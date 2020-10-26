@@ -1,0 +1,21 @@
+<!--pages/test/test.wxml-->
+<view class='container flex_row'>
+    <image src='{{audiolist[0].coverimg}}' class='cover'/>
+
+    <view class='center flex_column'>
+        <view class='title'>5. 构筑不败的长城，信心与成功的欲望</view>
+        <view class='slider flex_row'>
+            <slider class='process_bar' bindchange='sliderChange' backgroundColor='#808080' activeColor='#C68C46' block-color='#C68C46' block-size="12" value='{{audioTime}}'/>
+            <view class='time'>{{showTime1}}/{{showTime2}}</view>
+        </view>
+    </view>
+
+    <view catchtap='playAudio'>
+        <view wx:if="{{isPlayAudio}}">
+            <image class='control_btn' src='../../assets/pause.png' />
+        </view>
+        <view wx:else>
+            <image class='control_btn' src='../../assets/play.png' />
+        </view>
+    </view>
+</view>

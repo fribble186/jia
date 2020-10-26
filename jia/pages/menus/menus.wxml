@@ -1,0 +1,8 @@
+<!--pages/menus/menus.wxml-->
+<image src='../../images/back.png' class='backicon' bindtap='back'/>
+<view style='text-align:center'>
+<view class='instruct'>请输入菜单名字</view>
+<input placeholder='在这里输入哦' placeholder-class='place' class='name' bindinput='put'></input>
+<view class='instruct'>是否设置为默认菜单？<switch bindchange="switchChange"/></view>
+</view>
+<button bindtap='upload' class='confirm'>确认生成菜单</button>

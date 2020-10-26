@@ -1,0 +1,25 @@
+<!--pages/dishes/dishes.wxml-->
+<image src='../../images/back.png' class='backicon' bindtap='back'/>
+<scroll-view scroll-y='true' class='scroll'>
+<view wx:for="{{dishes}}" class='line'>
+<view class='type'>{{item.category}}</view>
+<view class='name'>{{item.name}}</view>
+<image class='deleteOne' src='../../images/deleteOne.png' data-id="{{item._id.$oid}}" bindtap='del'></image>
+</view>
+</scroll-view>
+<button class='btn' bindtap='add'>添一道自家的菜</button>
+<view class='black' hidden='{{hide}}'></view>
+<view class='add' hidden='{{hide}}'>
+<view class='intro'>请输入菜名</view>
+<input placeholder='在这里输入哦' bindinput='listenName' class='name1'></input>
+<view class='intro'>请选择菜的种类</view>
+<picker-view indicator-style="height: 50px;" style="width: 100px; height: 60px;margin-left:270rpx" value="{{value}}" bindchange="bindChange">
+  <picker-view-column>
+    <view wx:for="{{categorys}}" style="line-height: 50px">{{item.name}}</view>
+  </picker-view-column>
+</picker-view>
+<view class='di'>
+<button class='submit' bindtap='submit'>提交</button>
+<image src='../../images/close.png' class='close' bindtap='close'/>
+</view>
+</view>

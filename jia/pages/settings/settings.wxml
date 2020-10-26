@@ -1,0 +1,22 @@
+<!--pages/settings/settings.wxml-->
+<image src='../../images/back.png' class='backicon' bindtap='back'/>
+<image src='../../images/game.png' class='paper' bindtap='togame'/>
+<image src='../../images/can.png' class='can' bindtap='can'/>
+<view class='circle'>
+<view class='title'>家庭成员</view>
+<scroll-view class='c_members' scroll-x>
+<image class='c_member' wx:for="{{avaters}}" src='{{item.avater}}'></image>
+<image src='../../images/circle.png' class='c_member' style='border:0rpx dotted black;border-radius:0rpx' bindtap='toCircle'></image>
+</scroll-view>
+</view>
+<view class='menu'>
+    <view class='title'>菜谱</view>
+    <scroll-view class='m_members' scroll-x>
+    <view class='m_member' wx:for="{{menus}}" catchlongpress='del' bindtap='alt' data-id="{{item._id.$oid}}"><text>{{item.name}}</text></view>
+    <image src='../../images/menu.png' class='m_member' style='border:0rpx dotted black;margin-top:0rpx' bindtap='toMenus'></image>
+    </scroll-view>
+</view>
+<view class='dish'>
+<view class='title'>祖传菜</view>
+<button class='btn' bindtap='toDishes'>家+菜</button>
+</view>

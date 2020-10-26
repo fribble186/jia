@@ -1,0 +1,38 @@
+/* pages/game/game.wxss */
+.backicon{
+  margin:20rpx;
+  width:90rpx;
+  height:90rpx;
+}
+
+.title{
+  font-size: 60rpx;
+  font-weight: 900;
+  margin-bottom:10rpx;
+}
+
+.ins{
+  padding:50rpx;
+}
+
+.gameoutput{
+  width:80%;
+  height:100rpx;
+  margin-left:70rpx;
+  background: #d8f9cf;
+  margin-bottom:100rpx;
+  padding-top:30rpx;
+  text-align: center
+}
+
+.gameinput{
+  width:80%;
+  margin-left:70rpx;
+  border: 1rpx solid white;
+  height:300rpx;
+  margin-bottom:50rpx;
+}
+
+.submit{
+  background: #fdffe2
+}

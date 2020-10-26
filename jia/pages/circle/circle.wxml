@@ -1,0 +1,17 @@
+<!--pages/circle/circle.wxml-->
+<image src='../../images/back.png' class='backicon' bindtap='back'/>
+<view wx:for="{{members}}" class='member'>
+    <image src='{{item.avater}}'></image>
+    <view class='name'>{{item.nickname}}</view>
+</view>
+<view class='in' hidden='{{hide}}' bindtap='attend'>加入</view>
+<button class='invite' open-type="share">邀请家人</button>
+
+<!--login遮罩层-->
+<view class='login' hidden='{{cancel}}'>
+<view class='userAvatar'><open-data type="userAvatarUrl"></open-data></view>
+<view class='userName'>欢迎你，<open-data type="userNickName"></open-data></view>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='login-btn'>授权登录</button>
+<view wx:else>请升级微信版本</view>
+</view>

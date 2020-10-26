@@ -1,0 +1,31 @@
+/* pages/menus/menus.wxss */
+.backicon{
+  margin:20rpx;
+  width:90rpx;
+  height:90rpx;
+}
+
+.instruct{
+  font-size: 50rpx;
+  font-weight: 900;
+}
+
+.place{
+  font-size: 50rpx;
+  font-weight: 600;
+}
+
+.name{
+padding:50rpx;
+padding-bottom:0rpx;
+border-radius:200rpx;
+margin-bottom:100rpx;
+}
+
+.confirm{
+  position: fixed;
+  width:500rpx;
+  bottom:300rpx;
+  left: 135rpx;
+  background: #fdffe2;
+}

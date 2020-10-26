@@ -1,0 +1,37 @@
+/* pages/test/test.wxss */
+.container{
+  background: #333333;
+  color: white;
+  margin-top:100rpx;
+  padding:20rpx 10rpx 10rpx 10rpx;
+}
+.cover{
+  width:80rpx;
+  height:80rpx;
+  border-radius: 50%;
+  border:1rpx solid white;
+  margin-left:20rpx;
+}
+.center{
+  width:500rpx;
+
+}
+.title{
+  font-size: 28rpx;
+
+}
+
+.process_bar{
+  width:350rpx;
+
+}
+.time{
+  font-size:23rpx;
+  line-height:70rpx;
+
+}
+.control_btn{
+  width:60rpx;
+  height:60rpx;
+  margin-top:20rpx;
+}

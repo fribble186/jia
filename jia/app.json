@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/test/test",
+    "pages/homepage/homepage",
+    "pages/settings/settings",
+    "pages/circle/circle",
+    "pages/dishes/dishes",
+    "pages/menus/menus",
+    "pages/game/game"
+  ],
+    "window": {
+      "navigationStyle": "custom"
+    }
+}
